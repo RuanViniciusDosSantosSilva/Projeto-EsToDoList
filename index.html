@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>EsToDoList</title>
 </head>
-<body>
-    
+<body class="h-screen grid grid-cols-3 overflow-hidden">
+    <section class="h-full flex flex-col items-center p-4 gap-4 bg-white">
+        <h1 class="text-5xl">EsToDoList</h1>
+        <img src="Docs/imagem_menu.jpg" alt="Ilustração do menu" class="max-h-60 rounded-md">
+        <article class="w-full flex flex-col gap-4 pl-8 pt-4">
+            <label class="flex items-center gap-3 text-3xl">
+                <input type="checkbox" class="w-5 h-5 accent-green-400">
+                Início
+            </label>
+            <label class="flex items-center gap-3 text-3xl">
+                <input type="checkbox" class="w-5 h-5 accent-green-400">
+                Tarefas
+            </label>
+            <label class="flex items-center gap-3 text-3xl">
+                <input type="checkbox" class="w-5 h-5 accent-green-400">
+                Calendário
+            </label>
+        </article>
+    </section>
+    <section class="col-span-2 bg-blue-200">
+
+    </section>
 </body>
 </html>
